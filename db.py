@@ -4,7 +4,7 @@ import pymongo
 class Db():
     
     def __init__(self):
-        self.connectionstring = os.getenv("CS_MONGODB")
+        self.connectionstring = "mongodb+srv://dbadmin:12345@cluster0.iwbd6oa.mongodb.net/?retryWrites=true&w=majority"
         self.client = pymongo.MongoClient(self.connectionstring)
         self.db = self.client["Softwares"]
         self.col = self.db["Keys"]

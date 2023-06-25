@@ -16,13 +16,13 @@ def main():
 
         if insert_input.lower() == "i":
             database.insert_sw()
-            database.show_sw()
+            False
         elif insert_input.lower() == 'k':
             database.show_keys()
-            database.show_sw()
+            False
         elif insert_input.lower() == 'ik':
             database.insert_key()
-            database.show_sw()
+            False
         elif insert_input.lower() == 'q':
             print("\n Leaving program... :( ")
             quit()
